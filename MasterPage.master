@@ -1,0 +1,89 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>OnlineEdu </title>
+
+		<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet" />
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+		<header id="header" class="transparent-nav">
+			<div class="container">
+				<div class="navbar-header">
+					<div class="navbar-brand">
+						<a class="logo" href="WebForm1.aspx">
+							<h3 style="color:white">OnlineEdu</h3>
+						</a>
+					</div>
+	    			<button class="navbar-toggle">
+						<span></span>
+					</button>
+				</div>
+				<nav id="nav">
+					<ul class="main-menu nav navbar-nav navbar-right">
+						<li><a href="WebForm1.aspx"><asp:Label ID="home" runat="server" Text="Home"></asp:Label></a></li>
+						<li><a href="Courses.aspx"><asp:Label ID="courses" runat="server" Text="Courses"></asp:Label></a></li>
+						<li><a href="ContactUS.aspx"><asp:Label ID="contact" runat="server" Text="Contact US"></asp:Label></a></li>
+                        <li><a href="Join.aspx"><asp:Label ID="login" runat="server" Text="LogIn"></asp:Label></a></li>
+                        <li><a href="Register.aspx"><asp:Label ID="register" runat="server" Text="Register"></asp:Label></a></li>
+                        <li><a href="CourseDetail.aspx"><asp:Label ID="name" runat="server" Text=""></asp:Label></a></li> 
+					</ul>
+				</nav>
+			</div>
+		</header>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+		<footer id="footer" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="footer-logo">
+							<a class="logo" href="WebForm1.aspx">
+								<h3>OnlineEdu </h3>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<ul class="footer-nav">
+							<li><a href="WebForm1.aspx"><asp:Label ID="fhome" runat="server" Text="Home"></asp:Label></a></li>
+						<li><a href="Courses.aspx"><asp:Label ID="fcourse" runat="server" Text="Courses"></asp:Label></a></li>
+						<li><a href="ContactUS.aspx"><asp:Label ID="fcontact" runat="server" Text="Contact US"></asp:Label></a></li>
+                        <li id ="Li1"><a id="A1" href="Join.aspx"><asp:Label ID="flogin" runat="server" Text="LogIn"></asp:Label></a></li>
+                        <li class =" login"><a href="Register.aspx"><asp:Label ID="fregister" runat="server" Text="Register"></asp:Label></a></li> 
+						</ul>
+					</div>
+				</div>
+				<div id="bottom-footer" class="row">
+					<div class="col-md-4 col-md-push-8">
+						<ul class="footer-social">
+							<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" class="google-plus"><i class="fa fa-google"></i></a></li>
+							<li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+						</ul>
+					</div>
+					<div class="col-md-8 col-md-pull-4">
+						<div class="footer-copyright">
+							<span>&copy; Copyright 2020. OnlineEdu | All Rights Reserved</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div id='preloader'><div class='preloader'></div></div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+    </form>
+</body>
+</html>
